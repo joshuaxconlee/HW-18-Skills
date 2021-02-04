@@ -1,0 +1,134 @@
+#navBar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    font-family: gilroy;
+    padding-top: 0px;
+}
+#list1{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: auto;
+    list-style: none;
+    padding-right: 40px;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 1vw;
+    font-weight: 700;
+    font-size: 22px;
+}
+li a{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0 1vw;
+}
+li a:hover{
+    background-color:  #46A9FD;
+}
+a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+#headerImg{
+    display: flex;
+    align-content: left;
+    margin-left: 30px;
+}
+body{
+    margin-top: 30px;
+    background: url(../images/Night\ Sky\ \(3\ of\ 4\).jpg);
+    background-size: cover;
+}
+.gridArea{
+    margin: auto;
+    padding-top: 20px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "userResearch userEmpathy writingWordsmithing tools";
+    grid-gap: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.userResearch{
+    grid-area: userResearch;
+}
+.userEmpathy{
+    grid-area: userEmpathy;
+}
+.writingWordsmithing{
+    grid-area: writingWordsmithing;
+}
+.Tools{
+    grid-area: tools;
+}
+#title{
+    text-align: center;
+}
+h1{
+    color: #f2f2f2;
+    font-family: gilroy;
+    font-size: 62px;
+}
+h2{
+    font-family: gilroy;
+    font-size: 35px;
+    color: #f2f2f2;
+    margin: auto;
+    text-align: center;
+}
+p{
+    font-family: filson pro;
+    font-weight: 400;
+    font-size: 18px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+}
+ol{
+    display: block;
+    list-style: none;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: filson pro;
+    font-weight: 400;
+    font-size: 18px;
+    padding-right: 10px;
+}
+#researchImg{
+    display: block;
+    margin: 0 auto;
+    box-shadow: 3 3 3 #f2f2f2;
+}
+#empathyImg{
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+}
+#writingImg{
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footerContent{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 600){
+    .gridArea{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
